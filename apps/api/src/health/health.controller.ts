@@ -5,7 +5,7 @@ export interface HealthResponse {
     service: 'agentops-api',
 }
 
-@Controller('health')
+@Controller('health/live')
 export class HealthController {
     @Get()
     getHealth(): HealthResponse {
